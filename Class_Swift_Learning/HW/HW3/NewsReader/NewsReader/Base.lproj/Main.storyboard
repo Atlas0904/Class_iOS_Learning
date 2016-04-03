@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="RVw-Ah-xmo">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--News Title-->
+        <scene sceneID="ahW-Ze-qRJ">
+            <objects>
+                <tableViewController id="Phz-rT-W2g" customClass="ArticlesViewController" customModule="NewsReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="FXd-Bx-rdl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ArticleCell" id="Eyq-fb-mqE" customClass="ArticleCell" customModule="NewsReader" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Eyq-fb-mqE" id="EHN-Mp-Lub">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I94-y0-jjj">
+                                            <rect key="frame" x="0.0" y="0.0" width="67" height="35"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9B-yz-e8l">
+                                            <rect key="frame" x="75" y="0.0" width="246" height="32"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleBarImage" destination="I94-y0-jjj" id="6Gc-fY-69f"/>
+                                    <outlet property="titleBarLabel" destination="T9B-yz-e8l" id="Rgt-4l-9fQ"/>
+                                    <segue destination="G4F-VU-B74" kind="push" identifier="displayContent" id="ztV-hu-ggv"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Phz-rT-W2g" id="Mb1-30-svg"/>
+                            <outlet property="delegate" destination="Phz-rT-W2g" id="6bC-4q-EnS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="News Title" id="A1S-Ck-Epk"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PQe-tQ-Z8G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1371" y="-146"/>
+        </scene>
+        <!--Content-->
+        <scene sceneID="b3K-5l-ems">
+            <objects>
+                <viewController id="G4F-VU-B74" customClass="ContentViewController" customModule="NewsReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5MM-Vt-Gst"/>
+                        <viewControllerLayoutGuide type="bottom" id="XvW-8Y-DNK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xjl-6z-uSz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Os-9v-upE">
+                                <rect key="frame" x="20" y="64" width="280" height="58.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x77-gg-GiS">
+                                <rect key="frame" x="20" y="114" width="280" height="134"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dht-PK-QWw">
+                                <rect key="frame" x="20" y="247" width="290" height="313"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Content">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Content" id="Pz9-Cn-FVl"/>
+                    <connections>
+                        <outlet property="newsContentLabel" destination="dht-PK-QWw" id="rjH-xN-h6J"/>
+                        <outlet property="newsImageView" destination="x77-gg-GiS" id="KBx-NP-sKJ"/>
+                        <outlet property="newsTitleLabel" destination="4Os-9v-upE" id="ywK-PC-jX1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gNG-Ap-run" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1864" y="-146"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3kn-vn-QGd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RVw-Ah-xmo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="iEX-xI-0aZ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OdA-86-wj9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Phz-rT-W2g" kind="relationship" relationship="rootViewController" id="L0T-vt-z7V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tx7-Zx-W2A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="784.5" y="-145.5"/>
+        </scene>
+    </scenes>
+</document>
