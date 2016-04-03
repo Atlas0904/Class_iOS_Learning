@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F89C7B91C9E66F700C80502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F89C7B81C9E66F700C80502 /* AppDelegate.swift */; };
+		5F89C7BE1C9E66F700C80502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F89C7BC1C9E66F700C80502 /* Main.storyboard */; };
+		5F89C7C01C9E66F700C80502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F89C7BF1C9E66F700C80502 /* Assets.xcassets */; };
+		5F89C7C31C9E66F700C80502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F89C7C11C9E66F700C80502 /* LaunchScreen.storyboard */; };
+		5F89C7CB1C9E67B100C80502 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F89C7CA1C9E67B100C80502 /* Firebase.framework */; };
+		5F89C7CE1C9E688100C80502 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F89C7CD1C9E688100C80502 /* libicucore.tbd */; };
+		5F89C7D01C9E689000C80502 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F89C7CF1C9E689000C80502 /* libc++.tbd */; };
+		5F89C7D21C9E689A00C80502 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F89C7D11C9E689A00C80502 /* CFNetwork.framework */; };
+		5F89C7D41C9E68A400C80502 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F89C7D31C9E68A400C80502 /* Security.framework */; };
+		5F89C7D61C9E68AF00C80502 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F89C7D51C9E68AF00C80502 /* SystemConfiguration.framework */; };
+		5F89C7D81C9E691C00C80502 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F89C7D71C9E691C00C80502 /* Article.swift */; };
+		5F89C7DB1C9E69F800C80502 /* BaseArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F89C7DA1C9E69F800C80502 /* BaseArticlesViewController.swift */; };
+		5F89C7DD1C9E6A2300C80502 /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F89C7DC1C9E6A2300C80502 /* ArticlesViewController.swift */; };
+		5F89C7F31C9E77BF00C80502 /* Haneke.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5F89C7EB1C9E777700C80502 /* Haneke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6F8ED7F51CA053CF001E2FD5 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8ED7F41CA053CF001E2FD5 /* ContentViewController.swift */; };
+		6F9EACF11C9F82760014B498 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9EACF01C9F82760014B498 /* ArticleCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F89C7EA1C9E777700C80502 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F89C7E41C9E777700C80502 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A095C9561980418C00CD0F4C;
+			remoteInfo = Haneke;
+		};
+		5F89C7EC1C9E777700C80502 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F89C7E41C9E777700C80502 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A095C9611980418C00CD0F4C;
+			remoteInfo = HanekeTests;
+		};
+		5F89C7EE1C9E777700C80502 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F89C7E41C9E777700C80502 /* Haneke.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0026E9A19C9BFBC004DE0C6;
+			remoteInfo = HanekeDemo;
+		};
+		5F89C7F01C9E779F00C80502 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F89C7E41C9E777700C80502 /* Haneke.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A095C9551980418C00CD0F4C;
+			remoteInfo = Haneke;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F89C7F21C9E77A900C80502 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5F89C7F31C9E77BF00C80502 /* Haneke.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5F89C7B51C9E66F700C80502 /* NewsReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F89C7B81C9E66F700C80502 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F89C7BD1C9E66F700C80502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F89C7BF1C9E66F700C80502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F89C7C21C9E66F700C80502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F89C7C41C9E66F700C80502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F89C7CA1C9E67B100C80502 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		5F89C7CD1C9E688100C80502 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		5F89C7CF1C9E689000C80502 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		5F89C7D11C9E689A00C80502 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5F89C7D31C9E68A400C80502 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5F89C7D51C9E68AF00C80502 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5F89C7D71C9E691C00C80502 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		5F89C7DA1C9E69F800C80502 /* BaseArticlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseArticlesViewController.swift; sourceTree = "<group>"; };
+		5F89C7DC1C9E6A2300C80502 /* ArticlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
+		5F89C7E41C9E777700C80502 /* Haneke.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Haneke.xcodeproj; path = "HanekeSwift-0.10.1/Haneke.xcodeproj"; sourceTree = "<group>"; };
+		6F8ED7F41CA053CF001E2FD5 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		6F9EACF01C9F82760014B498 /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F89C7B21C9E66F700C80502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F89C7D61C9E68AF00C80502 /* SystemConfiguration.framework in Frameworks */,
+				5F89C7D41C9E68A400C80502 /* Security.framework in Frameworks */,
+				5F89C7D21C9E689A00C80502 /* CFNetwork.framework in Frameworks */,
+				5F89C7D01C9E689000C80502 /* libc++.tbd in Frameworks */,
+				5F89C7CE1C9E688100C80502 /* libicucore.tbd in Frameworks */,
+				5F89C7CB1C9E67B100C80502 /* Firebase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F89C7AC1C9E66F700C80502 = {
+			isa = PBXGroup;
+			children = (
+				5F89C7B71C9E66F700C80502 /* NewsReader */,
+				5F89C7E41C9E777700C80502 /* Haneke.xcodeproj */,
+				5F89C7CC1C9E67BB00C80502 /* Frameworks */,
+				5F89C7B61C9E66F700C80502 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F89C7B61C9E66F700C80502 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F89C7B51C9E66F700C80502 /* NewsReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F89C7B71C9E66F700C80502 /* NewsReader */ = {
+			isa = PBXGroup;
+			children = (
+				5F89C7B81C9E66F700C80502 /* AppDelegate.swift */,
+				6F9EACF01C9F82760014B498 /* ArticleCell.swift */,
+				5F89C7DC1C9E6A2300C80502 /* ArticlesViewController.swift */,
+				6F8ED7F41CA053CF001E2FD5 /* ContentViewController.swift */,
+				5F89C7BC1C9E66F700C80502 /* Main.storyboard */,
+				5F89C7BF1C9E66F700C80502 /* Assets.xcassets */,
+				5F89C7C11C9E66F700C80502 /* LaunchScreen.storyboard */,
+				5F89C7C41C9E66F700C80502 /* Info.plist */,
+				5F89C7D91C9E69B100C80502 /* Support Files */,
+			);
+			path = NewsReader;
+			sourceTree = "<group>";
+		};
+		5F89C7CC1C9E67BB00C80502 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F89C7D51C9E68AF00C80502 /* SystemConfiguration.framework */,
+				5F89C7D31C9E68A400C80502 /* Security.framework */,
+				5F89C7D11C9E689A00C80502 /* CFNetwork.framework */,
+				5F89C7CF1C9E689000C80502 /* libc++.tbd */,
+				5F89C7CD1C9E688100C80502 /* libicucore.tbd */,
+				5F89C7CA1C9E67B100C80502 /* Firebase.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F89C7D91C9E69B100C80502 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F89C7DA1C9E69F800C80502 /* BaseArticlesViewController.swift */,
+				5F89C7D71C9E691C00C80502 /* Article.swift */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		5F89C7E51C9E777700C80502 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F89C7EB1C9E777700C80502 /* Haneke.framework */,
+				5F89C7ED1C9E777700C80502 /* HanekeTests.xctest */,
+				5F89C7EF1C9E777700C80502 /* HanekeDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F89C7B41C9E66F700C80502 /* NewsReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F89C7C71C9E66F700C80502 /* Build configuration list for PBXNativeTarget "NewsReader" */;
+			buildPhases = (
+				5F89C7B11C9E66F700C80502 /* Sources */,
+				5F89C7B21C9E66F700C80502 /* Frameworks */,
+				5F89C7B31C9E66F700C80502 /* Resources */,
+				5F89C7F21C9E77A900C80502 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F89C7F11C9E779F00C80502 /* PBXTargetDependency */,
+			);
+			name = NewsReader;
+			productName = NewsReader;
+			productReference = 5F89C7B51C9E66F700C80502 /* NewsReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F89C7AD1C9E66F700C80502 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = hpd.io;
+				TargetAttributes = {
+					5F89C7B41C9E66F700C80502 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 5F89C7B01C9E66F700C80502 /* Build configuration list for PBXProject "NewsReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F89C7AC1C9E66F700C80502;
+			productRefGroup = 5F89C7B61C9E66F700C80502 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5F89C7E51C9E777700C80502 /* Products */;
+					ProjectRef = 5F89C7E41C9E777700C80502 /* Haneke.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				5F89C7B41C9E66F700C80502 /* NewsReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5F89C7EB1C9E777700C80502 /* Haneke.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Haneke.framework;
+			remoteRef = 5F89C7EA1C9E777700C80502 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5F89C7ED1C9E777700C80502 /* HanekeTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HanekeTests.xctest;
+			remoteRef = 5F89C7EC1C9E777700C80502 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5F89C7EF1C9E777700C80502 /* HanekeDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HanekeDemo.app;
+			remoteRef = 5F89C7EE1C9E777700C80502 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F89C7B31C9E66F700C80502 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F89C7C31C9E66F700C80502 /* LaunchScreen.storyboard in Resources */,
+				5F89C7C01C9E66F700C80502 /* Assets.xcassets in Resources */,
+				5F89C7BE1C9E66F700C80502 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F89C7B11C9E66F700C80502 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F89C7DB1C9E69F800C80502 /* BaseArticlesViewController.swift in Sources */,
+				5F89C7DD1C9E6A2300C80502 /* ArticlesViewController.swift in Sources */,
+				5F89C7B91C9E66F700C80502 /* AppDelegate.swift in Sources */,
+				6F9EACF11C9F82760014B498 /* ArticleCell.swift in Sources */,
+				6F8ED7F51CA053CF001E2FD5 /* ContentViewController.swift in Sources */,
+				5F89C7D81C9E691C00C80502 /* Article.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F89C7F11C9E779F00C80502 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Haneke;
+			targetProxy = 5F89C7F01C9E779F00C80502 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F89C7BC1C9E66F700C80502 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F89C7BD1C9E66F700C80502 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F89C7C11C9E66F700C80502 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F89C7C21C9E66F700C80502 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F89C7C51C9E66F700C80502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F89C7C61C9E66F700C80502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F89C7C81C9E66F700C80502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = NewsReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.hpd.NewsReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5F89C7C91C9E66F700C80502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = NewsReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.hpd.NewsReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F89C7B01C9E66F700C80502 /* Build configuration list for PBXProject "NewsReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F89C7C51C9E66F700C80502 /* Debug */,
+				5F89C7C61C9E66F700C80502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F89C7C71C9E66F700C80502 /* Build configuration list for PBXNativeTarget "NewsReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F89C7C81C9E66F700C80502 /* Debug */,
+				5F89C7C91C9E66F700C80502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F89C7AD1C9E66F700C80502 /* Project object */;
+}
